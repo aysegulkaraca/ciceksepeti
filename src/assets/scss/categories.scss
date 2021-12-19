@@ -1,0 +1,145 @@
+
+@import './variables.scss';
+
+.categories {
+    .breadcrumb {
+        width: 100%;
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding:10px 0;
+            li {
+                display: inline-flex;
+                align-items: center;
+                text-align: left;
+                padding-right: 5px;
+                font: normal normal normal 13px/30px Source Sans Pro;
+                letter-spacing: 0px;
+                color: $primaryTextColor;
+                &.active {
+                    color: $green;
+                }
+            }
+        }
+    }
+    .category-area {
+        padding-bottom: 30px;
+        @media screen and  (max-width: $small) {
+            width: auto;
+            background-color: #f6f9fd;
+            height: calc(100% - 74px);
+            overflow: scroll;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 4;
+            top: 70px;
+            height: 100%;
+        }
+        
+        .category-list {
+            text-align: left;
+            font: $categoryTitleFont;
+            letter-spacing: 0px;
+            color: $blue;
+            @media screen and  (max-width: $small) {
+                height: 100%;
+            }
+            .category-header {
+                span {
+                    padding: 0px 5px;
+                    @media screen and  (max-width: $small) {
+                        display: none;
+                    }
+                }
+                @media screen and  (max-width: $small) {
+                    top: 30px;
+                    padding: 0px 15px;
+                    position: fixed;
+                }
+            }
+            .category-item {
+                display: inline-block;
+                flex-wrap: wrap;
+                padding: 20px 20px 0 0;
+                list-style: none;
+                @media screen and  (max-width: $xsmall) {
+                    padding: 5px;
+                }
+                @media (min-width: 376px) and  (max-width: $small) {
+                    padding: 15px 0px 0 8px;
+                }
+                @media (min-width: 415px) and  (max-width: $large) {
+                    padding: 10px 10px 0 0px;
+                }
+                @media (min-width: 1401px) and  (max-width: 1599px) {
+                    padding: 10px 10px 0 0px;
+                }
+                .category-content {
+                    display: flex;
+                    @media screen and  (max-width: $small) {
+                        align-items: center;
+                        height: 48px;
+                        width: 100%;
+                        padding-top: 10px auto 10px 30px;
+                        text-decoration: none;
+                    }
+                    @mixin button-style($bg,$color,$borderColor) {
+                        background: $bg;
+                        color: $color;
+                        border: 1px solid $borderColor;
+                        &:hover {
+                          background:darken($bg,8%);
+                          transition: all 0.3s ease;
+                        }
+                        &:active {
+                            background: $bg;
+                            color: $color;
+                            border: 1px solid $borderColor;
+                        } 
+                    }
+                    .btn {
+                        background: white;
+                        color: $boldTextColor;
+                        border: $outline-border;
+                        text-decoration:none;
+                        padding:15px 35px;
+                        border-radius:$btn-primary-radius;
+                        font-size: 18px;
+                        width: 195px;
+                        height: 50px;
+                        line-height: 20px;
+                        @media screen and  (max-width: $xsmall) {
+                            font-size:15px;
+                            width: 175px;
+                        }
+                        @media (min-width: 415px) and  (max-width: $large) {
+                            font-size: 11px;
+                            width: 89px;
+                            height: 40px;
+                            line-height: 10px;
+                            padding:15px 5px;
+                        }
+                        @media (min-width: 769px) and  (max-width: $large) {
+                            font-size: 13px;
+                            width: 123px;
+                        }
+                        @media (min-width: 1025px) and  (max-width: 1599px) {
+                            font-size:15px;
+                            width: 175px;
+                        }
+                    }
+                    .active {
+                        @include button-style(#044DC3,#ffffff, #044DC3);
+                    }
+                }
+            }
+        }
+    }
+    .selected-category {
+        .not-found-product {
+            padding-left: 5px;
+        }
+    }
+}

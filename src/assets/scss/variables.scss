@@ -1,0 +1,60 @@
+/* general variables.. */
+$xsmall: 375px;
+$small: 414px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1280px;
+$xxlarge: 1400px;
+$xxxlarge: 1600px;
+$blue: #044DC3;
+$green: #51B549;
+$outline-border: 1px solid #E2E7E9;
+
+/* button */
+$btn-primary: #044DC3;
+$btn-primary-outline-border: 1px solid #044DC3;
+$btn-primary-radius: 10px;
+
+/* notification style */
+$notifyBg: #FF5B4D;
+
+/* text style */
+$primaryTextColor: #555555;
+$boldTextColor: #707070;
+
+/* searchForm */
+$searchFormHeight: 90px;
+$searchItemHeight: 50px;
+$searchInputBg: #F7F7F7;
+$searchBorder:  #EDF1F2;
+$searchBtnColor: #51B549;
+$sfborderRadius: 28px;
+
+/* header */
+$headerHeight: 74px;
+
+/* categories */
+$categoryTitleFont: normal normal normal 24px/13px Source Sans Pro;
+
+/* products */
+$productFont: normal normal 600 15px/17px Source Sans Pro;
+
+/* campaigns */
+$campaignBorder: 10px;
+$freeCargoColor: #FFEAE8;
+$giftDiscountColor: #E8F1FF;
+$stationaryDiscountColor: #E2F7E1;
+$detailBtnRadius: 15px;
+$detailBtnHeight: 30px;
+$campaignFontSmall: normal normal 300 24px/24px Source Sans Pro;  // mobile
+$campaignFontMedium: normal normal 300 18px/20px Source Sans Pro; // tablet
+$campaignFontLarge: normal normal 300 23px/30px Source Sans Pro; // desktop
+
+/* footer */
+$footerBg: #F2F2F2;
+$footerBorder: 1px solid #ebf1fa;
+
+/* accordion panel */
+$accordionTitleFont: normal normal normal 18px/23px;
+$accordionBorder:1px solid #d2d3d3;
+$accordionListFont: normal normal normal 15px/19px  Source Sans Pro;

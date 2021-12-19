@@ -1,0 +1,96 @@
+@import './variables.scss';
+
+.campaigns {
+    border-top: 1px solid #ebf1fa;
+    overflow-x: hidden;
+    width: 100%;
+
+    .list {
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 50px;
+        
+        @media (min-width: 415px) and (max-width: $medium) {
+            display: flex;
+        }
+        @media screen and (min-width: $large) {
+            display: flex;  
+            padding-bottom: 105px;
+        }
+        .campaign-item {
+            display: inline-block;
+            padding: 10px;
+            border-radius: $campaignBorder;
+            text-align: left;
+            letter-spacing: 0px;
+            color: $boldTextColor;
+            margin:10px 10px 10px 0px;
+            height: 100%;
+            &#free-cargo-campaign {
+                background: $freeCargoColor;
+            }
+            &#gift-discount-campaign {
+                background: $giftDiscountColor;
+            }
+            &#stationary-discount-campaign {
+                background: $stationaryDiscountColor;
+            }
+            @media screen and (max-width: $small) {
+                margin:10px 10px 0px 0px;
+            }
+            .campaign-img-wrapper {
+                float: left;
+                @media (min-width: 415px) and (max-width: $medium) {
+                    float: none;
+                }
+                img{
+                    @media (min-width: 415px) and (max-width: $medium) {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .campaign-text-wrapper {
+                padding: 10px 0px 0px 15px;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 415px) and (max-width: $medium) {
+                    display: inline-block;
+                    text-align: center;
+                    padding:10px;
+                }
+                div {
+                    @media screen and (max-width: $small) {
+                        font: $campaignFontSmall;
+                    }
+                    @media screen and (min-width: $large) {
+                        font: $campaignFontMedium;
+                    }
+                    @media screen and (min-width: $xlarge) {
+                        font: $campaignFontLarge;
+                    }
+                }
+            } 
+            .detail-info-btn { 
+                background: white;
+                border-radius: $detailBtnRadius;
+                height: $detailBtnHeight;
+                font-size: 13px;
+                letter-spacing: 0px;
+                text-decoration: none;
+                text-align: center;
+                color: #E64E41;
+                padding: 7px 18px;
+                max-width: 121px;
+                margin-top: 10px;
+                @media screen and (min-width: $large) {
+                    padding: 7px 12px;
+                }
+            }
+            
+        }
+    }
+}

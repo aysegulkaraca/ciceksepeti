@@ -1,0 +1,74 @@
+{
+    "list": [
+        {
+            "name": "Tüm Kategoriler",
+            "id": "0",
+            "active": true
+        },
+        {
+            "name": "Elektronik",
+            "id": "1",
+            "active": false
+        },
+        {
+            "name": "Ev ve Yaşam",
+            "id": "2",
+            "active": false
+        },
+        {
+            "name": "Evcil Hayvam",
+            "id": "3",
+            "active": false
+        },
+        {
+            "name": "Kitap",
+            "id": "4",
+            "active": false
+        },
+        {
+            "name": "Oyuncak",
+            "id": "5",
+            "active": false
+        },
+        {
+            "name": "Spor",
+            "id": "6",
+            "active": false
+        },
+        {
+            "name": "Çiçek",
+            "id": "7",
+            "active": false
+        },
+        {
+            "name": "Hediye",
+            "id": "8",
+            "active": false
+        },
+        {
+            "name": "Moda, Aksesuar",
+            "id": "9",
+            "active": false
+        },
+        {
+            "name": "Ofis, Kırtasiye",
+            "id": "10",
+            "active": false
+        },
+        {
+            "name": "Parfüm",
+            "id": "11",
+            "active": false
+        },
+        {
+            "name": "Kişisel Bakım",
+            "id": "12",
+            "active": false
+        },
+        {
+            "name": "Petshop",
+            "id": "13",
+            "active": false
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.home {
+    @media screen and  (max-width: $small) {
+        top: 140px;
+        left: 0;
+        position: absolute;
+    }
+}
+.container {
+    @media screen and  (min-width: $xxxlarge) {
+        min-width: 1540px;
+    }
+}
+

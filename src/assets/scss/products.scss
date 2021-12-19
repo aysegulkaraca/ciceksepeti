@@ -1,0 +1,127 @@
+@import './variables.scss';
+
+.products {
+    padding: 10px 0 30px;
+    .product-list {
+        .product-item {
+            padding: 0px 30px 30px 0px;
+            display: inline-block;
+            @media screen and  (max-width: $small) {
+                padding-right: 0px;
+            }
+            @media (min-width: 415px) and  (max-width: $medium) {
+                padding-right: 10px;
+            }
+            .item-content {
+                width: 272px;
+                height: 400px;
+                background: white;
+                border: $outline-border;
+                border-radius: 10px;
+                @media screen and  (max-width: $small) {
+                    width: 100%;
+                    height: 100%;
+                }
+                @media (min-width: 415px) and  (max-width: $medium) {
+                    width: 220px;
+                }
+                @media (min-width: 1401px) and  (max-width: 1599px) {
+                    width: 229px;
+                }
+                .item-position {
+                    width: 100%;
+                    height: 100%;
+                    padding: 15px;
+                    .product-img {
+                        @media screen and  (max-width: $small) {
+                            float: left;
+                            padding: 15px 15px 0px 0px;
+                        }
+                        img {
+                            @media screen and  (max-width: $small) {
+                                width: 120px;
+                                margin-top: -15px;
+                            }
+                            @media (min-width: 415px) and  (max-width: $medium) {
+                                width: 188px;
+                            }
+                            @media (min-width: 1401px) and  (max-width: 1599px) {
+                                width: 200px;
+                            }
+                        }
+                        
+                    }
+                    .product-detail {
+                        @media screen and  (max-width: $small) {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        @media (min-width: 415px) and  (max-width: $medium) {
+                            padding-top: 40px;
+                        }
+                        @media (min-width: $xxlarge) and  (max-width: 1599px) {
+                            padding-top: 20px;
+                        }
+                        .product-name {
+                            text-align: left;
+                            font: $productFont;
+                            letter-spacing: 0px;
+                            color: $primaryTextColor;
+                            padding: 3px 0 3px 5px;
+                            height: 40px;
+                            @media screen and  (max-width: $small) {
+                                height: auto;
+                            }
+                            @media (min-width: 415px) and  (max-width: $medium) {
+                                height: 55px;
+                            }
+                            @media (min-width: $xxlarge) and  (max-width: 1599px) {
+                                height: 55px;
+                            }
+                        }
+                        .free-cargo {
+                            font: normal normal 600 15px/13px Source Sans Pro;
+                            letter-spacing: 0px;
+                            color: $green;
+                            padding: 3px 0 3px 5px;
+                            height: 20px;
+                        }
+                        .price {
+                            font: normal normal 600 16px/13px Source Sans Pro;
+                            letter-spacing: 0px;
+                            color: black;
+                            padding: 3px 0 3px 5px;
+                        }
+                        .add-basket-area {
+                            padding: 3px 0 0 0;
+                            .add-basket {
+                                border: $btn-primary-outline-border;
+                                border-radius: 22px;
+                                font: normal normal 600 15px/15px Source Sans Pro;
+                                letter-spacing: 0px;
+                                color: $btn-primary;
+                                background: white;
+                                padding: 10px;
+                                width: 100%;
+                            }
+                            .product-spinner {
+                                border: $outline-border;
+                                border-radius: 25px;
+                                .btn {
+                                    padding: 5px;
+                                }
+                                .input-spinner {
+                                    border:none;
+                                    text-align: center;
+                                    font: normal normal bold 22px/13px Source Sans Pro;
+                                    letter-spacing: 0px;
+                                    color: #555555;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

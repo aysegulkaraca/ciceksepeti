@@ -1,0 +1,30 @@
+
+@import './variables.scss';
+
+.header {
+    top: 0px;
+    height: $headerHeight;
+    background: transparent url('../assets/images/header_h1.png') 0% 0% no-repeat padding-box;
+    @media screen and (max-width: $small) {
+        display: none;
+    }
+    h1 {
+        line-height: $headerHeight;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #ffffff;
+        opacity: 1;
+    }
+    .breadcrumb {
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            li {
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+    
+}
