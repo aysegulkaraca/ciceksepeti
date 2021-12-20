@@ -1,5 +1,5 @@
 # ciceksepeti
-
+VueJs, vuex Project
 ## Project setup
 ```
 npm install
