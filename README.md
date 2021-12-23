@@ -1,4 +1,4 @@
-![repository-open-graph-template](https://user-images.githubusercontent.com/31936869/147283134-a9422799-15e4-4b2b-bcd3-682975238b5a.png)
+
 # ciceksepeti
 VueJs, vuex Project
 ## Project setup
